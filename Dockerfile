@@ -1,8 +1,8 @@
-FROM alpine:20-alpine 
+FROM node:20-alpine
 
 WORKDIR /app 
 
-COPY packege*.json ./ 
+COPY package*.json ./ 
 
 RUN npm install --only=production 
 
